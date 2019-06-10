@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* 
+	Author: Ethan Wilderbuer 
+	Date: 4/23/2019
+*/
+
+body > nav {
+	font-size: 0.7em;
+}
+
+nav > ul {
+margin-top: 2px;
+margin-left: 2px;
+margin-right: 10px;
+margin-bottom: 10px;	
+}
+
+parent descendent {
+	font-weight: normal;
+	margin-top: 0px;
+}
+
+html {
+	background-image: url(background-picture.png);
+}
+/* This is a royalty-free image from this website: https://pixabay.com/ */
+
+/* M5LO7 Demonstrate use of properties of flexbox containers */
+html {
+	display: flex;
+	flex-flow: row wrap;
+}
+/* The container element chosen for this is the wrap element. Its intention is to wrap the content so that on a phone one will not have to scroll to see everything */
+
+/* M5LO6 Demonstrate use of properties of flexbox items */
+html {
+	flex-grow: 2;
+}
+/* The grow property will not impact much in the long run but it should connect with the other flex elements in optimizing the view on a smartphone */
+
+/* M6LO7 Demonstrate how to format a table with CSS */
+/* M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas) */
+table.speed {
+	background: white;
+	border: 12px outset rgb(0, 0, 0);
+	border-collapse: separate;
+	width: 99%;
+	font-size: 0.90em;
+}
+/* The border collapse here inside makes the table much easier to understand than if it were not present */
+
+table.speed th, table.speed td {
+	border: 1px solid black;
+}
+
+table.speed caption {
+	caption-side: bottom;
+	text-align: left;
+}
+/* The CSS here does not have much impact but it does make the table more clear and simple */
+
+header {
+	box-shadow: rgb(51, 51, 51) 15px 1px 20px, rgb(51, 51, 51) -15px 1px 20px;
+}
